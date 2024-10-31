@@ -18,7 +18,7 @@ searchInput.addEventListener("keyup", function () {
 
 async function getData(movieTitle) {
 
-  let url = `http://www.omdbapi.com/?s=${movieTitle}&apikey=${apiKey}`;
+  let url = `https://www.omdbapi.com/?s=${movieTitle}&apikey=${apiKey}`;
 
   try {
     const response = await fetch(url);
