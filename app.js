@@ -74,7 +74,7 @@ function displaySuggestions(movies) {
 async function selectMovie(id) {
   suggestions.classList.add("hidden");
 
-  let movieSelectedUrl = `http://www.omdbapi.com/?i=${id}&apikey=${apiKey}`;
+  let movieSelectedUrl = `https://www.omdbapi.com/?i=${id}&apikey=${apiKey}`;
 
   try {
     const response = await fetch(movieSelectedUrl);
