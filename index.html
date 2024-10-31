@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap"
+    rel="stylesheet">
+  <title>Movie App</title>
+</head>
+
+<body>
+  <!-- title app -->
+  <header>
+    <h1>Movie App</h1>
+  </header>
+  <!-- end title app -->
+
+  <!-- header container -->
+  <div class="header-container">
+
+    <!-- search -->
+    <input type="text" id="search" placeholder="search...">
+    <!-- end search -->
+
+    <!-- search suggestions -->
+    <div class="suggestions hidden">
+
+      <!-- suggestions movie -->
+      <div class="suggestions-movie">
+
+        <!-- suggestions img -->
+        <div class="suggestions-img">
+          <img class="suggestions-poster" src="" alt="">
+
+        </div>
+        <!-- end suggestions img -->
+
+        <!-- suggestions info -->
+        <div class="suggestions-info">
+          <h1 class="suggestions-title">Imge</h1>
+          <h2 class="suggestions-year">2022</h2>
+        </div>
+        <!-- end suggestions info -->
+
+      </div>
+      <!-- end suggestions movie -->
+    </div>
+    <!-- end search suggestions -->
+
+    <!-- icon search -->
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="gray">
+      <path
+        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+    </svg>
+    <!-- end icon search -->
+
+  </div>
+  <!-- end header container -->
+
+  <!-- body container -->
+  <div class="body-container">
+
+    <!-- img container -->
+    <div class="img-container">
+      <img class="poster"
+        src="https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_SX300.jpg"
+        alt="Poster">
+    </div>
+    <!-- end img container -->
+
+    <!-- info container -->
+    <div class="info-container">
+
+      <!-- title movie -->
+      <h2 class="title-movie highlight">The Batman</h2>
+      <!-- end title movie -->
+
+      <!-- history movie -->
+      <p class="history-movie"><span class="year highlight">Year:</span> 2022 <span
+          class="rating highlight">PG-12</span> <span class="released highlight">released:</span> 04 Mar 2022</p>
+      <!-- end history movie -->
+
+      <!-- genre movie -->
+      <p class="genre-movie"><span class="genre highlight">genre:</span> Action, Crime, Drama</p>
+      <!-- end genre movie -->
+
+      <!-- rating movie -->
+      <p class="writer-movie"><span class="writer highlight">writer:</span> Matt Reeves, Peter Craig, Bob Kane</p>
+      <!-- end rating movie -->
+
+      <!-- actors movie -->
+      <p class="actors-movie"><span class="actors highlight">actors:</span> Robert Pattinson, Zoë Kravitz, Jeffrey
+        Wright</p>
+      <!-- end actors movie -->
+
+      <!-- plot movie -->
+      <p class="plot-movie"><span class="plot highlight">plot:</span> When a sadistic serial killer begins murdering key
+        political figures in Gotham, The Batman is forced to investigate the city's hidden corruption and question his
+        family's involvement..</p>
+      <!-- end plot movie -->
+
+      <!-- language movie -->
+      <p class="language-movie"><span class="language highlight">language:</span> English, Spanish, Latin, Italian</p>
+      <!-- end language movie -->
+
+      <!-- awards movie -->
+      <p class="awards-movie"><span class="awards highlight">awards:</span> Nominated for 3 Oscars. 39 wins & 185
+        nominations total</p>
+      <!-- end awards movie -->
+
+    </div>
+    <!-- end info container -->
+
+  </div>
+  <!-- end body container -->
+</body>
+<script src="app.js"></script>
+
+</html>
