@@ -2,7 +2,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(78, 78, 78);  
+  background-color: #243642;  
   font-family: "Roboto", sans-serif;
 }
 
@@ -17,15 +17,94 @@ h1, h2, h3, h4, h5, h6 , p{
 }
 
 header{
-  background-color: #333;
+  background-color: #243642;
   color: #fff;
   text-align: center;
   padding: 10px;
 }
 
+.header-app{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon{
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  cursor: pointer;
+}
+
+.favorite-movies{
+  background-color: #243642;
+  position: absolute;
+  right: 0;
+  top: 8%;
+  height: 80vh;
+  width: 400px;
+  padding: 10px ;
+  overflow-y: auto;
+  z-index: 999;
+  border: solid 2px white;
+  border-radius: 10px;
+}
+
+.favorites-container{
+  border: solid white 1px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.poster-favorite{
+  border: 1px solid #fff;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color:#fff;
+  border-radius: 5px;
+}
+
+.info-favorite{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  position: relative;
+}
+
+.title-favorite{
+  width: 100%;
+  height: 60px;
+  text-transform: capitalize;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.year-favorite{
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+}
+
+.remove-favorite{
+  position: absolute;
+  right: 0;
+  top: 70%;
+  width: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .header-container{
-  /* background-color: red; */
-  background-color: #756d6d;
+  background-color: #387478;
   width: 100%;
   height: 50px;
   display: flex;
@@ -47,14 +126,14 @@ header{
 }
 
 .suggestions{
-  background-color: #333;
+  background-color: #EAD8B1;
   position: absolute;
-  top: 14%;
-  left: 24.3%;
+  top: 15%;
+  left: 24.4%;
   width: 50%;
   max-height: 200px;
   overflow-y: auto;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   padding: 5px;
   z-index: 1;
 }
@@ -78,8 +157,8 @@ header{
 }
 
 .suggestions-movie{
-  border: solid rgb(156, 156, 156) 2px;
-  color: #fff;
+  border: solid #333 2px;
+  color: #000;
   padding: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -97,7 +176,7 @@ header{
 .suggestions-poster{
   width: 70px;
   height: 70px;
-  border: white solid 2px;
+  border: black solid 2px;
 }
 
 .suggestions-info{
@@ -129,7 +208,6 @@ header{
 }
 
 .body-container{
-  /* background-color: burlywood; */
   width: 100%;
   height: 80vh;
   display: flex;
@@ -138,7 +216,6 @@ header{
 }
 
 .img-container{
-  /* background-color: blueviolet; */
   width: 40%;
   height: 100%;
   display: flex;
@@ -153,7 +230,6 @@ header{
 }
 
 .info-container{
-  /* background-color: brown; */
   width: 50%;
   height: 100%;
   display: flex;
@@ -211,12 +287,20 @@ header{
   color:goldenrod;
 }
 
+.add-favorite{
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .hidden{
   display: none;
 }
 
 .no-movies{
-  color: #fff;
+  color: #333;
   font-size: 2rem;
 }
 
@@ -288,6 +372,15 @@ header{
 
   .language-movie{
     font-size: 0.6rem;
+  }
+
+  .favorite-movies{
+    width: 200px;
+    height: 60vh;
+  }
+
+  .title-favorite{
+    font-size: 10px;
   }
 }
 
